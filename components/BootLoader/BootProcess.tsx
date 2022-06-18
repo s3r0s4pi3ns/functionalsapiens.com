@@ -29,7 +29,7 @@ export const BootProcess: BaseReactComponent<BootProcessProps> = ({
 
   return (
     <>
-      {bootLog.map(({ content, error }, index) => {
+      {bootLog.map(({ content, error }) => {
         nextStepTime += step;
 
         return (

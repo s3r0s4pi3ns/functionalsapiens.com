@@ -5,7 +5,7 @@ export const MainLayout: BaseReactComponent = ({ children }) => {
   return (
     <>
       <Meta />
-      <main>{children}</main>
+      <main className="h-screen bg-slate-900 text-gray-100">{children}</main>
     </>
   );
 };
