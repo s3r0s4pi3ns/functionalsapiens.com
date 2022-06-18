@@ -3,13 +3,13 @@
 // https://securityheaders.com
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com;
-  child-src *.youtube.com *.google.com;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline'
+  child-src *.google.com;
   style-src 'self' 'unsafe-inline' *.googleapis.com;
   img-src * blob: data:;
   media-src 'none';
   connect-src *;
-  font-src 'self';
+  font-src 'self' *.gstatic.com;
 `;
 
 module.exports = {

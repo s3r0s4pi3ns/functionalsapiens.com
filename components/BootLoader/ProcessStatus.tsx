@@ -8,7 +8,7 @@ const StatusSquare: BaseReactComponent<ProcessStatusProps> = ({ error }) => (
   <>
     <div>[</div>
     <div
-      className={`font-bold text-center w-[55px] ${
+      className={`font-normal text-center w-[55px] ${
         error ? 'text-red-500' : 'text-green-500'
       }`}
     >
@@ -27,7 +27,7 @@ export const ProcessStatus: BaseReactComponent<ProcessStatusProps> = ({
       <div className="flex justify-between mr-3">
         <StatusSquare error={error} />
       </div>
-      <pre className="whitespace-pre-line">{children}</pre>
+      <pre className="whitespace-pre-line font-sans">{children}</pre>
     </>
   );
 };
