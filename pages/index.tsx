@@ -1,11 +1,11 @@
 import type { NextPage } from 'next';
+import { useRouter } from 'next/router';
+import { BootProcess } from '../components/BootLoader';
 
 const Home: NextPage = () => {
-  return (
-    <div className="text-slate-300 prose prose-lg">
-      <h2>la prose</h2>
-    </div>
-  );
+  const router = useRouter();
+
+  return <BootProcess onBooted={() => router.push('/bin/bash')} />;
 };
 
 export default Home;
