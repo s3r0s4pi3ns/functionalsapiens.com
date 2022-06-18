@@ -23,15 +23,6 @@ module.exports = {
   // },
   optimizeFonts: true,
   poweredByHeader: false,
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/login',
-        permanent: true,
-      },
-    ];
-  },
   //https://nextjs.org/docs/advanced-features/security-headers
   async headers() {
     return [
