@@ -10,7 +10,7 @@ export const ShellPointer: BaseReactComponent<ShellPointerProps> = ({
   directory = '~',
 }) => {
   return (
-    <div>
+    <div className="mr-1">
       <pre>
         <span className="font-bold text-yellow-400 sm:text-[16px] sm:leading-[18px] text-[10px] leading-[12px]">
           {user}
